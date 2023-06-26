@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>キャラクター一覧と世界観</title>
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      color: #333333;
+      margin-bottom: 30px;
+    }
+    
+    .character-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+    }
+    
+    .character-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    
+    .character-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .character-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .character-card-content {
+      padding: 20px;
+    }
+    
+    .character-name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .character-description {
+      color: #777777;
+    }
+    
+    .world-description {
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      margin-top: 30px;
+      animation: slideDown 0.5s;
+    }
+    
+    @keyframes slideDown {
+      0% {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>キャラクター一覧</h1>
+    
+    <div class="character-grid">
+      <div class="character-card">
+        <img src="character1.jpg" alt="キャラクター1">
+        <div class="character-card-content">
+          <h2 class="character-name">キャラクター1</h2>
+          <p class="character-description">キャラクター1の特徴や説明などをここに書きます。</p>
+        </div>
+      </div>
+      
+      <div class="character-card">
+        <img src="character2.jpg" alt="キャラクター2">
+        <div class="character-card-content">
+          <h2 class="character-name">キャラクター2</h2>
+          <p class="character-description">キャラクター2の特徴や説明などをここに書きます。</p>
+        </div>
+      </div>
+      
+      <!-- 追加のキャラクターカードをここに追加 -->
+      
+    </div>
+    
+    <div class="world-description">
+      <h2>世界観</h2>
+      <p>この物語は、魔法と冒険があふれるファンタジーの世界を舞台にしています。</p>
+      <p>この世界は中世のような雰囲気で、広大な大陸が広がり、様々な種族や魔法が存在します。</p>
+      <p>主人公はこの世界でさまざまな困難な冒険に立ち向かい、成長していく様子が描かれます。</p>
+    </div>
+  </div>
+</body>
+</html>
